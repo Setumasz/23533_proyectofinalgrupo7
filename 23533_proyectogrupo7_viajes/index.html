@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/img/logo-viajes.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Seven Travels - Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="FlexContainerHeader">
+                <div class="HeaderLogoContainer"> <a href="https://www.google.com"> <img id="ImagenLogo" src="src/img/logo-viajes.jpg"  alt="Logo Seven Tranvels"></a>
+                </div>
+                
+                <div class="HeaderSearchContainer">
+                    <form action="" class="SearchBarForm">
+                        <input id="SearchBar" type="text" placeholder="  Buscá tu próximo destino">
+                            <button type="submit"><img id="ImagenBusca" src="src/img/buscar.png" alt="Buscar!"></button>
+                    </form>          
+                </div>
+    
+                <div class="HeaderButtonsContainer">
+                    <button class="ButtonHeader">Vuelos</button>
+                    <button class="ButtonHeader">Alojamientos</button>
+                    <button class="ButtonHeader">Paquetes</button>
+                    <button class="ButtonHeader">Iniciar Sesion</button>
+                </div>   
+                
+            </div>
+        </nav>
+    </header>
+
+    <main class="MainIndex">
+        <section>
+            <div class="carousel">
+                <ul> 
+                    <li><a href="pages/vuelos.html"><img src="src/img/vuelos.png" alt="Vuelos"></li></a>
+                    <li><a href="pages/paquetes.html"><img src="src/img/paquetes.jpg" alt="Paquetes"></li></a>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="actividades">
+                <ul> 
+                    <li><a href="pages/actividades.html"><img src="src/img/colombia.jpg" alt="Actividades en Colombia"></li></a>
+                    <li><a href="pages/actividades.html"><img src="src/img/cartagena.jpg" alt="Actividades en Cartagena de Indias"></li></a>
+                    <li><a href="pages/actividades.html"><img src="src/img/grandriviera.png" alt="Actividades en Grand Riviera Princess"></li></a>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+        <div class="IconosRedes">
+            <h2 class="Centrar">Seguinos</h2>
+                <a href="https://www.facebook.com"><img src="src/img/icon-facebook.svg" alt="icon-facebook"></a>
+                <a href="https://www.youtube.com"><img src="src/img/icon-youtube.svg" alt="icon-youtube"></a>
+                <a href="https://www.instagram.com"><img src="src/img/icon-instagram.svg" alt="icon-instagram"></a> 
+        </div>
+        <div class="Contacto">
+            <h3 class="Centrar">Contactanos</h3>   
+                <button class="AbriteBoton" onclick="openForm()">Enviar consulta</button>
+            </div>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+            <h3 class="Centrar">SevenTravels</h3>
+
+            <label for="text"><h3 class="Izquierdar">Email</h3></label>
+            <input type="email" placeholder="Ingresa tu mail" name="email" required>
+
+            <label for="text"><h3 class="Izquierdar">Escribe tu mensaje</label>
+            <input type="text">
+
+            <button type="submit" class="btn">Enviar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+            </form>
+        </div>
+
+                <p id="FooterCopyright">Copyright 2023. All Rights Reserved Seven Travels - 7 GROUP</p>
+            
+        </section>             
+    </footer>
+
+</body>
+</html>
